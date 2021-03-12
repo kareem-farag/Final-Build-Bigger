@@ -26,5 +26,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="Gradle: ud867-final.jokesprovider.jokesprovider" level="project" />
   </component>
 </module>
