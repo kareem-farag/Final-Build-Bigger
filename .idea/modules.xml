@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ud867-final.iml" filepath="$PROJECT_DIR$/.idea/ud867-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ud867-final.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ud867-final.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/ud867-final.backend.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/ud867-final.backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jokeslib/ud867-final.jokeslib.iml" filepath="$PROJECT_DIR$/.idea/modules/jokeslib/ud867-final.jokeslib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jokesprovider/ud867-final.jokesprovider.iml" filepath="$PROJECT_DIR$/.idea/modules/jokesprovider/ud867-final.jokesprovider.iml" />
+    </modules>
+  </component>
+</project>

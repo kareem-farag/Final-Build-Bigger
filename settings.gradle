@@ -1,0 +1,3 @@
+include ':jokesprovider'
+include ':jokeslib'
+include ':app', ':backend'
