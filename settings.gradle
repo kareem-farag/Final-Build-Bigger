@@ -1,3 +1,5 @@
+include ':myApi'
 include ':jokesprovider'
 include ':jokeslib'
 include ':app', ':backend'
+project(':myApi').projectDir = new File(rootDir, 'backend/build/endpointsClientLibs/myApi-v1-java/myApi/')

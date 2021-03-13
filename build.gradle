@@ -2,13 +2,16 @@
 
 buildscript {
     repositories {
-
+        mavenCentral()
+        mavenLocal()
         jcenter()
         google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.2'
         classpath 'com.google.guava:guava:22.0'
+        classpath group: 'com.udacity.gradle.builditbigger.backend', name: 'myApi', version: 'v1-1.25.0-SNAPSHOT'
+
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -17,7 +20,14 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots' // SNAPSHOT repository (if needed)
+
+        }
+        mavenLocal()
+        mavenCentral()
         jcenter()
         google()
     }
+
 }
