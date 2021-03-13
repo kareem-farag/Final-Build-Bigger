@@ -15,13 +15,13 @@ buildscript {
 }
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -49,7 +49,18 @@ android {
         }
 
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -61,7 +72,7 @@ dependencies {
     implementation group: 'com.google.http-client', name: 'google-http-client-gson', version: '1.25.0'
 
 
-    implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    implementation 'com.google.android.gms:play-services-ads:16.0.0'
     implementation 'com.google.api-client:google-api-client:+'
     implementation 'com.google.http-client:google-http-client-android:1.38.1'
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
@@ -81,8 +92,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
     implementation project(':backend')
-    implementation project(':myApi')
-    implementation project(':jokeslib')
+    implementation project(':jokesLibDisplay')
     implementation project( ':jokesprovider')
 
 

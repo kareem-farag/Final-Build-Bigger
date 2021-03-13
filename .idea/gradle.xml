@@ -13,8 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/backend" />
-            <option value="$PROJECT_DIR$/backend/build/endpointsClientLibs/myApi-v1-java/myApi" />
-            <option value="$PROJECT_DIR$/jokeslib" />
+            <option value="$PROJECT_DIR$/jokesLibDisplay" />
             <option value="$PROJECT_DIR$/jokesprovider" />
           </set>
         </option>
