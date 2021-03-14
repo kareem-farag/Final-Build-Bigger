@@ -10,7 +10,7 @@ public class MyBean {
     public String getData() {
 
 
-        return new JokesProvider().getJokes();
+        return myData;
     }
 
     public void setData(String data) {
