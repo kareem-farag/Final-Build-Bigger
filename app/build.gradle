@@ -32,6 +32,11 @@ android {
 
     }
 
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
     dexOptions {
         javaMaxHeapSize "4g"
     }
@@ -41,8 +46,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
         }
-        flavorDimensions "type"
     }
+    flavorDimensions "default"
+
     productFlavors {
         free {
             applicationId "com.udacity.gradle.builditbigger.free"
@@ -73,6 +79,7 @@ dependencies {
 
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     endpointsServer project( path:':backend', configuration: 'endpoints')
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
@@ -85,7 +92,7 @@ dependencies {
     implementation group: 'com.google.http-client', name: 'google-http-client-gson', version: '1.25.0'
 
 
-    implementation 'com.google.android.gms:play-services-ads:16.0.0'
+    freeImplementation 'com.google.android.gms:play-services-ads:16.0.0'
     implementation 'com.google.api-client:google-api-client:+'
     implementation 'com.google.http-client:google-http-client-android:1.38.1'
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
@@ -104,8 +111,8 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
 
-    implementation project(':backend')
-    implementation project(':jokesLibDisplay')
+    //implementation project(':backend')
+    implementation project(':jobsDisplay')
     implementation project( ':jokesprovider')
 
 

@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/ud867-final.iml" filepath="$PROJECT_DIR$/.idea/ud867-final.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ud867-final.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ud867-final.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/ud867-final.backend.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/ud867-final.backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jokesLibDisplay/ud867-final.jokesLibDisplay.iml" filepath="$PROJECT_DIR$/.idea/modules/jokesLibDisplay/ud867-final.jokesLibDisplay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jobsDisplay/ud867-final.jobsDisplay.iml" filepath="$PROJECT_DIR$/.idea/modules/jobsDisplay/ud867-final.jobsDisplay.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jokesprovider/ud867-final.jokesprovider.iml" filepath="$PROJECT_DIR$/.idea/modules/jokesprovider/ud867-final.jokesprovider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend/build/endpointsClientLibs/myApi-v1-java/myApi/ud867-final.myApi.iml" filepath="$PROJECT_DIR$/.idea/modules/backend/build/endpointsClientLibs/myApi-v1-java/myApi/ud867-final.myApi.iml" />
     </modules>

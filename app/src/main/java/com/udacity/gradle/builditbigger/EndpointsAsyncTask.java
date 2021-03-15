@@ -12,12 +12,19 @@ import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
 import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
+import com.udacity.gradle.builditbigger.jobsdisplay.JokeDisplay;
 
 import java.io.IOException;
 
 class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
+
+    private Callback callback;
+
+    public EndpointsAsyncTask(Callback callback){
+        this.callback = callback;
+    }
 
     @Override
     protected String doInBackground(Pair<Context, String>... params) {
@@ -27,7 +34,7 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
                     // options for running against local devappserver
                     // - 10.0.2.2 is localhost's IP address in Android emulator
                     // - turn off compression when running against local devappserver
-                    .setRootUrl("https://192.168.1.8:8080/_ah/api/")
+                    .setRootUrl("https://10.0.2.2:8080/_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
@@ -51,8 +58,12 @@ class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> 
 
     @Override
     protected void onPostExecute(String result) {
-        Intent intent = new Intent(context,JokeDisplay.class);
-        intent.putExtra("joke" , result);
-        context.startActivity(intent);
+        if(result != null){
+            callback.onCallFinished(result);
+        }
+    }
+
+    public interface Callback{
+        void onCallFinished(String result);
     }
 }

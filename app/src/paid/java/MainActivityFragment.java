@@ -23,7 +23,7 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
-
+      /*
         if (root.findViewById(R.id.adView) != null ){
         AdView mAdView = (AdView) root.findViewById(R.id.adView);
 
@@ -37,7 +37,7 @@ public class MainActivityFragment extends Fragment {
                 .build();
         mAdView.loadAd(adRequest);
         }
-
+        */
 
         return root;
 
